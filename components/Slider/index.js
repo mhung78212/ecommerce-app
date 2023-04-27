@@ -2,8 +2,6 @@ import { imageSlider } from "@/assets";
 import SliderItem from "./SliderItem";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 
 const Slider = () => {

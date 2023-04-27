@@ -12,7 +12,7 @@ module.exports = {
                 rajdhani: ["Rajdhani","sans-serif"]
             },
             colors: {
-                primary: "#ffc600",
+                primary: "#f2a100",
                 secondary: "#e9e1f7",
                 black: "#252c51",
             },
@@ -22,6 +22,7 @@ module.exports = {
                     lg: "1200px",
                 },
             },
+            // flex:
         },
     },
     plugins: [],
