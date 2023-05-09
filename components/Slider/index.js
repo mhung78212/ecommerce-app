@@ -9,7 +9,7 @@ const Slider = () => {
         <Swiper
             loop={true}
             slidesPerView={1}
-            className="mySwiper"
+            className="main-slider"
             pagination={{
                 clickable: true,
             }}

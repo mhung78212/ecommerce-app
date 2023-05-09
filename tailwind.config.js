@@ -9,12 +9,14 @@ module.exports = {
         extend: {
             fontFamily: {
                 rubik: ["Rubik", "sans-serif"],
-                rajdhani: ["Rajdhani","sans-serif"]
+                rajdhani: ["Rajdhani", "sans-serif"],
             },
             colors: {
                 primary: "#f2a100",
                 secondary: "#e9e1f7",
                 black: "#252c51",
+                white: "#fff",
+                gray: '#494949'
             },
             container: {
                 center: true,
@@ -22,7 +24,12 @@ module.exports = {
                     lg: "1200px",
                 },
             },
-            // flex:
+            spacing: {},
+            fontSize: {
+                25: '25px',
+                16: '16px',
+            },
+            lineHeight: {},
         },
     },
     plugins: [],

@@ -6,8 +6,8 @@ import { Pagination } from "swiper";
 
 const Brand = () => {
     return (
-        <>
-            <div className="header-brand">
+        <div className="brand">
+            <div className="brand-header">
                 <div className="container">
                     <div className="flex items-center justify-center">
                         <div className="w-2/3 text-center">
@@ -21,7 +21,7 @@ const Brand = () => {
                             </p>
                             <Link
                                 href="./shop"
-                                className="btn btn-primary mt-10"
+                                className="btn btn-primary btn-large mt-24"
                             >
                                 purchase now
                             </Link>
@@ -29,38 +29,40 @@ const Brand = () => {
                     </div>
                 </div>
             </div>
-
             <div className="bg-primary py-[50px]">
                 <div className="container">
-                    <div className="ml-24">
-                        <Swiper
-                            slidesPerView={5}
-                            loop={true}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            breakpoints={{
-                                768: {
-                                    slidesPerView: 3,
-                                },
-                            }}
-                            modules={[Pagination]}
-                            className="brandSwiper"
-                        >
-                            {imageBrand.map((brand, index) => (
-                                <SwiperSlide key={index}>
+                    <Swiper
+                        loop={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        slidesPerView={2}
+                        breakpoints={{
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            1080: {
+                                slidesPerView: 5,
+                            },
+                        }}
+                        modules={[Pagination]}
+                        className="brandSwiper"
+                    >
+                        {imageBrand.map((brand, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="flex justify-center">
                                     <Image
                                         className="opacity-50 transition-all hover:opacity-100 "
                                         src={brand}
                                         alt=""
                                     />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

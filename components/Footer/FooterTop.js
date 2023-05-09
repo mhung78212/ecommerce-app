@@ -5,8 +5,8 @@ import "remixicon/fonts/remixicon.css";
 
 const FooterTop = () => {
     return (
-        <div className="bg-secondary pt-2 pb-8">
-            <div className="container mt-8">
+        <div className="bg-secondary pt-1 pb-5">
+            <div className="container mt-5">
                 <div className="flex">
                     <div className="flex-auto w-2/12">
                         <Link href="/">
@@ -19,18 +19,17 @@ const FooterTop = () => {
                                 <div className="h-[46px] w-[39px]">
                                     <Image src={Icon4} alt="icon" />
                                 </div>
-                                <div className="pl-4">
-                                    <h6 className="title">Call Us:</h6>
-                                    <p className="title">00 123 456 789</p>
+                                <div className="pl-5">
+                                    <h6 className="footer-title">Call Us:</h6>
+                                    <p className="footer-title">00 123 456 789</p>
                                 </div>
                             </div>
-
                             <Image src={Payment} alt="payment" />
                         </div>
                     </div>
                     <div className="flex-auto w-5/12">
                         <div className="flex items-center justify-end">
-                            <h6 className="title mr-4">Subscribe Now :</h6>
+                            <h6 className="footer-title mr-10">Subscribe Now :</h6>
                             <div className="max-w-[276px] w-full relative">
                                 <form action="">
                                     <input

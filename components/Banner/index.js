@@ -8,9 +8,9 @@ const Banner = () => {
         { label: "New Lamp Light Collection", image: imageBanner[2] },
     ];
     return (
-        <div className="pt-[100px]">
+        <div className="pt-24">
             <div className="container">
-                <div className="grid grid-cols-3 gap-8 mx-4">
+                <div className="grid grid-cols-3 gap-10 mx-4">
                     {banners.map((banner) => (
                         <BannerItem
                             key={banner.label}
